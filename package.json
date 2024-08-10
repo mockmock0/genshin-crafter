@@ -1,0 +1,8 @@
+{
+  "name": "genshin-crafter",
+  "version": "0.0.1",
+  "description": "Genshin Inventory Crafter",
+  "author": "mockmock1",
+  "main": "bin/craftify.js",
+  "license": "MIT"
+}
