@@ -26,13 +26,6 @@ Afterwards, each 11 crafting procedure is performed and the final value is retur
 
 ### Usage
 
-You can download file via this repo, or use script tag like below
-
-파일 직접 받아서 가져와도 되고, script 태그로 가져와 쓰셔도 됩니다.
-```
-<script src='https://genshin-craft.github.io/craftify_min.js'></script>
-```
-
 You can use only 1 function. Make sure the arrays are correctly aligned starting from 5star to 2star.
 If the number of item's class is not 4 but 3, you can put 0 value in 5star.
 
@@ -40,6 +33,34 @@ If the number of item's class is not 4 but 3, you can put 0 value in 5star.
 만일 아이템 등급이 총 3개라면 5성 부분에 0을 넣으시면 됩니다.
 ```
 const result = craftify ( [possess arr], [target arr] );
+```
+
+installing via NPM
+npm으로 설치 및 사용
+```
+npm install genshin-crafter
+```
+```
+// test.js
+
+const craftify = require("genshin-crafter");
+
+console.dir(craftify([0, 0, 1, 112], [6, 9, 0, 0]));
+
+// node test.js
+/* result will be
+{
+  required: [ 5, 0, 0, 0 ],
+  requiredTotal: 128,
+  remain: [ 0, 0, 1, 4 ],
+  count: [ 1, 12, 36 ]
+}
+*/
+```
+You can also download file via this repo, or use script tag like below
+파일 직접 받아서 가져와도 되고, script 태그로 가져와 쓰셔도 됩니다.
+```
+<script src='https://genshin-craft.github.io/craftify_min.js'></script>
 ```
 
 return value may like below
