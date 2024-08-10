@@ -41,7 +41,7 @@ npm install genshin-crafter
 
 const craftify = require("genshin-crafter");
 
-console.dir(craftify([0, 0, 1, 112], [6, 9, 0, 0]));
+console.log(craftify([0, 0, 1, 112], [6, 9, 0, 0]));
 
 // node test.js
 /* result will be
