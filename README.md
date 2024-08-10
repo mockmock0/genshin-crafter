@@ -1,8 +1,8 @@
 See GUI Example Page  [Kor](https://genshin-craft.github.io/index.html) / [Eng](https://genshin-craft.github.io/index_en.html)
 
-See Post in [Gamedot](https://genshin.gamedot.org/?mid=board&target=view&board=tip&page=1&post=470)
-
-### Mechanism
+See Post in [Gamedot](https://genshin.gamedot.org/?mid=board&target=view&board=tip&page=1&post=470)   
+  
+## Mechanism  
 
 First, calculate the items in the same class
 Afterwards, each 11 crafting procedure is performed and the final value is returned.
@@ -21,17 +21,21 @@ Afterwards, each 11 crafting procedure is performed and the final value is retur
 |5star <-- 2star + 3star|0,0,8,3|1,0,0,0|
 |5star <-- 2star + 4star|0,2,0,9|1,0,0,0|
 |4star <-- 2star + 3star|0,0,2,3|0,1,0,0|
-|5star <-- 2star + 3star + 4star|0,2,2,3|1,0,0,0|
-
-
-### Install
+|5star <-- 2star + 3star + 4star|0,2,2,3|1,0,0,0|  
+  
+  
+  
+  
+## Install
 
 installing via npm
 
 npm으로 설치 및 사용
+
 ```shell
 npm install genshin-crafter
 ```
+
 ```JavaScript
 // test.js
 
@@ -49,6 +53,8 @@ console.dir(craftify([0, 0, 1, 112], [6, 9, 0, 0]));
 }
 */
 ```
+
+
 You can also download file via this repo, or use script tag like below
 
 파일 직접 받아서 가져와도 되고, script 태그로 가져와 쓰셔도 됩니다.
@@ -56,7 +62,9 @@ You can also download file via this repo, or use script tag like below
 <script src='https://genshin-craft.github.io/craftify_min.js'></script>
 ```
 
-### Usage
+
+
+## Usage
 
 You can use only 1 function. Make sure the arrays are correctly aligned starting from 5star to 2star.
 If the number of item's class is not 4 but 3, you can put 0 value in 5star.
@@ -67,6 +75,7 @@ If the number of item's class is not 4 but 3, you can put 0 value in 5star.
 const result = craftify ( [possess arr], [target arr] );
 ```
 
+
 return value may like below
 
 리턴값은 아래와 같이 나옵니다
@@ -76,6 +85,7 @@ remain : [remained arr] ,
 required : [required arr]
 requiredTotal : required item totals
 ```
+
 
 Example
 ```JavaScript
