@@ -26,7 +26,8 @@ Afterwards, each 11 crafting procedure is performed and the final value is retur
 
 ### Install
 
-installing via NPM
+installing via npm
+
 npm으로 설치 및 사용
 ```shell
 npm install genshin-crafter
@@ -49,6 +50,7 @@ console.dir(craftify([0, 0, 1, 112], [6, 9, 0, 0]));
 */
 ```
 You can also download file via this repo, or use script tag like below
+
 파일 직접 받아서 가져와도 되고, script 태그로 가져와 쓰셔도 됩니다.
 ```HTML
 <script src='https://genshin-craft.github.io/craftify_min.js'></script>
